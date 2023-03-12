@@ -27,7 +27,7 @@
 
         <TextView
             android:id="@+id/textStorage"
-            style="@style/TextAppearance.Kamatechs_App.Title"
+            style="@style/TextAppearance.Kamatechs_App.Subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="37dp"

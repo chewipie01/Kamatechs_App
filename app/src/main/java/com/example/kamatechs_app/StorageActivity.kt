@@ -12,4 +12,9 @@ class StorageActivity : AppCompatActivity() {
         actionbar!!.title = "Storage Device Status"
         actionbar.setDisplayHomeAsUpEnabled(true)
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
 }

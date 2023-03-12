@@ -11,20 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imageDev"
-            android:layout_width="123dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="115dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="115dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.49"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/baseline_developer_mode_24"
-            tools:ignore="ImageContrastCheck" />
-
         <TextView
             android:id="@+id/nameGio"
             android:layout_width="wrap_content"
@@ -188,16 +174,17 @@
 
         <TextView
             android:id="@+id/textDev"
-            style="@style/TextAppearance.Kamatechs_App.Title"
+            style="@style/TextAppearance.Kamatechs_App.Subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="102dp"
-            android:layout_marginEnd="101dp"
-            android:text="DEVELOPERS"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="100dp"
+            android:text="Developers"
             android:textSize="34sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageDev" />
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

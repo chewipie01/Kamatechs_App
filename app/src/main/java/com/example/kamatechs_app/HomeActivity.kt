@@ -47,6 +47,14 @@ class HomeActivity : AppCompatActivity() {
                     startActivity(Intent(this, HomeActivity::class.java))
                     true
                 }
+                R.id.weatherActivity -> {
+                    startActivity(Intent(this, WeatherActivity::class.java))
+                    true
+                }
+                R.id.storageActivity -> {
+                    startActivity(Intent(this, StorageActivity::class.java))
+                    true
+                }
                 R.id.aboutFragment -> {
                     replaceFragment(AboutFragment())
                     true
@@ -55,12 +63,8 @@ class HomeActivity : AppCompatActivity() {
                     replaceFragment(FAQFragment())
                     true
                 }
-                R.id.weatherActivity -> {
-                    startActivity(Intent(this, WeatherActivity::class.java))
-                    true
-                }
-                R.id.storageActivity -> {
-                    startActivity(Intent(this, StorageActivity::class.java))
+                R.id.developersFragment -> {
+                    replaceFragment(DevelopersFragment())
                     true
                 }
                 else -> false
@@ -69,24 +73,16 @@ class HomeActivity : AppCompatActivity() {
 
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             when(item.itemId){
-                R.id.homeActivity -> {
-                    startActivity(Intent(this, HomeActivity::class.java))
-                    true
-                }
                 R.id.aboutFragment -> {
                     replaceFragment(AboutFragment())
                     true
                 }
+                R.id.homeActivity -> {
+                    startActivity(Intent(this, HomeActivity::class.java))
+                    true
+                }
                 R.id.FAQFragment -> {
                     replaceFragment(FAQFragment())
-                    true
-                }
-                R.id.weatherActivity -> {
-                    startActivity(Intent(this, WeatherActivity::class.java))
-                    true
-                }
-                R.id.storageActivity -> {
-                    startActivity(Intent(this, StorageActivity::class.java))
                     true
                 }
                 else -> false

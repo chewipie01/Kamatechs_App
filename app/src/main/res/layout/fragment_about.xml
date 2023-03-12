@@ -26,12 +26,12 @@
 
         <TextView
             android:id="@+id/textView"
+            style="@style/TextAppearance.Kamatechs_App.Subtitle"
             android:layout_width="118dp"
             android:layout_height="38dp"
-            android:layout_marginStart="146dp"
+            android:layout_marginStart="155dp"
             android:layout_marginTop="18dp"
-            android:layout_marginEnd="147dp"
-            style="@style/TextAppearance.Kamatechs_App.Title"
+            android:layout_marginEnd="138dp"
             android:text="About"
             android:textSize="34sp"
             app:layout_constraintEnd_toEndOf="parent"
