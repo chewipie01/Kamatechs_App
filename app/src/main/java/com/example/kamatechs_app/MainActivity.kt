@@ -9,25 +9,30 @@ import androidx.navigation.ui.NavigationUI
 import com.example.kamatechs_app.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var drawerLayout: DrawerLayout
+//    private lateinit var drawerLayout: DrawerLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
+        @Suppress("UNUSED VARIABLE")
+        val binding = DataBindingUtil.setContentView<ActivityMainBinding>(
+            this,
+            R.layout.activity_main
+        )
+
+//        drawerLayout = binding.drawerLayout
+
+//        val navController = this.findNavController(R.id.myNavHostFragment)
+//        NavigationUI.setupActionBarWithNavController(this, navController, drawerLayout)
+
+//        NavigationUI.setupWithNavController(binding.navView, navController)
 
         val actionbar = supportActionBar
-        actionbar!!.title = "LOGIN"
-        actionbar.setDisplayHomeAsUpEnabled(true)
-
-        drawerLayout = binding.drawerLayout
-        val navController = this.findNavController(R.id.myNavHostFragment)
-        NavigationUI.setupActionBarWithNavController(this, navController, drawerLayout)
-        NavigationUI.setupWithNavController(binding.navView, navController)
+        actionbar!!.title = "Kamatechs"
 
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = this.findNavController(R.id.myNavHostFragment)
-        return NavigationUI.navigateUp(navController, drawerLayout)
-    }
+//    override fun onSupportNavigateUp(): Boolean {
+//        val navController = this.findNavController(R.id.myNavHostFragment)
+//        return NavigationUI.navigateUp(navController, drawerLayout)
+//    }
 }

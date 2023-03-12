@@ -15,10 +15,10 @@
         android:theme="@style/Theme.Kamatechs_App"
         tools:targetApi="31">
         <activity
-            android:name=".StorageActivity"
+            android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeFragment"
+            android:name=".StorageActivity"
             android:exported="false" />
         <activity
             android:name=".api.WeatherActivity"
@@ -36,9 +36,7 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
-
         </activity>
     </application>
 
